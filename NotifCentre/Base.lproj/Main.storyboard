@@ -33,13 +33,26 @@
                     <view key="view" contentMode="scaleToFill" id="QMu-Uj-wWy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeF-w0-kCE">
+                                <rect key="frame" x="105" y="384" width="165" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeTapped:" destination="3aK-LX-LXs" eventType="touchUpInside" id="MmY-FA-vja"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Bx3-LD-oCe"/>
                     </view>
+                    <connections>
+                        <outlet property="changeButton" destination="PeF-w0-kCE" id="McD-7n-eEj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Paq-CC-fZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2076" y="134"/>
+            <point key="canvasLocation" x="2076" y="133.74384236453201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cfh-Nf-Vcc">
